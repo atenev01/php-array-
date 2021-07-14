@@ -150,31 +150,31 @@ foreach($nyumberAndGrade as $element){
 
 }
 }
-echo '<p>' . "Statistical analysis of module marks..." . '</p>';
-foreach($nyumberAndGrade as $element){
-  $separatedStrings = preg_split ("/,/", $element);
-  pre_r(array($separatedStrings));
-  $StudentNumber = $separatedStrings[0];
-  $StudentGrade = $separatedStrings[1];
-  $StudentGradeLenght = strlen($StudentGrade);
-  $searchString = " ";
-  $replaceString = "";
-  $NoEmptySpaceString = preg_replace('/\s+/', '', $separatedStrings[1]);
-  $StudentNumberLenght = strlen($StudentNumber);
-  if (is_numeric($StudentNumber) == false or $StudentNumberLenght != 8 ){
-  }
-  elseif (is_numeric($NoEmptySpaceString) == false or $StudentGradeLenght < 4) {
-}
- else {
- $CorrectStudentNumber = $StudentNumber;
- $CorrectStudentGrade = $StudentGrade;
+//echo '<p>' . "Statistical analysis of module marks..." . '</p>';
+//foreach($nyumberAndGrade as $element){
+  //$separatedStrings = preg_split ("/,/", $element);
+  //pre_r(array($separatedStrings));
+  //$StudentNumber = $separatedStrings[0];
+  //$StudentGrade = $separatedStrings[1];
+ // $StudentGradeLenght = strlen($StudentGrade);
+  //$searchString = " ";
+  //$replaceString = "";
+  //$NoEmptySpaceString = preg_replace('/\s+/', '', $separatedStrings[1]);
+  //$StudentNumberLenght = strlen($StudentNumber);
+ // if (is_numeric($StudentNumber) == false or $StudentNumberLenght != 8 ){
+  //}
+ // elseif (is_numeric($NoEmptySpaceString) == false or $StudentGradeLenght < 4) {
+//}
+// else {
+ //$CorrectStudentNumber = $StudentNumber;
+ //$CorrectStudentGrade = $StudentGrade;
 
-}
-}
+//}
+//}
 
-echo "<p>Mean :" . number_format(mmmr($BBB), 1) . "</p>";
-echo "<p>Mode :" . mmmr($BBB, "mode") . "</p>";
-echo "<p>Range :" . mmmr($BBB, "range") . "</p>";
+//echo "<p>Mean :" . number_format(mmmr($BBB), 1) . "</p>";
+//echo "<p>Mode :" . mmmr($BBB, "mode") . "</p>";
+//echo "<p>Range :" . mmmr($BBB, "range") . "</p>";
 
 //echo "<p>Mode :" . mmmr($CorrectStudentGrade, "Mean") . "</p>";
 //echo "<p>" . $CorrectStudentGrade . "</p>";
